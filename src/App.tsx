@@ -5,6 +5,7 @@ import PageTransitionsPage from './demos/page-transitions'
 import SharedLayoutPage from './demos/shared-layout'
 import ScrollRevealPage from './demos/scroll-reveal'
 import DragReorderPage from './demos/drag-reorder'
+import GestureSwipePage from './demos/gesture-swipe'
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
           <Route path="/demos/shared-layout" element={<SharedLayoutPage />} />
           <Route path="/demos/scroll-reveal" element={<ScrollRevealPage />} />
           <Route path="/demos/drag-reorder" element={<DragReorderPage />} />
+          <Route path="/demos/gesture-swipe" element={<GestureSwipePage />} />
         </Routes>
       </div>
     </ThemeProvider>
