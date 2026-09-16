@@ -13,7 +13,7 @@
 [![Vite 6](https://img.shields.io/badge/Vite-6-646cff?style=flat-square&logo=vite)](https://vite.dev)
 [![License: MIT](https://img.shields.io/badge/License-MIT-emerald?style=flat-square)](./LICENSE)
 
-[Live Demo](https://github.com/Josheqani/motion-lab) • [Documentation](#the-five-production-demos) • [Getting Started](#getting-started) • [Architecture](#architecture--quality-bar)
+[Live Demo](https://josheqani.github.io/motion-lab/) • [Documentation](#the-five-production-demos) • [Getting Started](#getting-started) • [Architecture](#architecture--quality-bar)
 
 </div>
 
