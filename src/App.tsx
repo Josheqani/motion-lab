@@ -4,6 +4,7 @@ import { Nav } from './components/Nav'
 import PageTransitionsPage from './demos/page-transitions'
 import SharedLayoutPage from './demos/shared-layout'
 import ScrollRevealPage from './demos/scroll-reveal'
+import DragReorderPage from './demos/drag-reorder'
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
           <Route path="/demos/page-transitions" element={<PageTransitionsPage />} />
           <Route path="/demos/shared-layout" element={<SharedLayoutPage />} />
           <Route path="/demos/scroll-reveal" element={<ScrollRevealPage />} />
+          <Route path="/demos/drag-reorder" element={<DragReorderPage />} />
         </Routes>
       </div>
     </ThemeProvider>
