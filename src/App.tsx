@@ -1,9 +1,11 @@
 import { useEffect, lazy, Suspense } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'motion/react'
+import { HubPop } from 'hub-pop'
 import { ThemeProvider, useTheme } from './context/ThemeContext'
 import { Nav } from './components/Nav'
 import HomePage from './pages/HomePage'
+import { siteConfig } from './config/site'
 
 const PageTransitionsPage = lazy(() => import('./demos/page-transitions'))
 const SharedLayoutPage = lazy(() => import('./demos/shared-layout'))
@@ -30,6 +32,26 @@ function PageFallback() {
       <p className="text-xs font-mono text-neutral-400 animate-pulse">Loading demonstration module...</p>
     </div>
   )
+}
+
+function FloatingAboutMe() {
+  const { theme } = useTheme()
+
+  useEffect(() => {
+    const widget = HubPop({
+      name: siteConfig.name,
+      github: siteConfig.github,
+      website: siteConfig.website,
+      position: 'bottom-right',
+      theme,
+    })
+
+    return () => {
+      widget.destroy()
+    }
+  }, [theme])
+
+  return null
 }
 
 function AnimatedRoutes() {
@@ -68,6 +90,7 @@ export default function App() {
         <ScrollToTop />
         <Nav />
         <AnimatedRoutes />
+        <FloatingAboutMe />
       </div>
     </ThemeProvider>
   )

@@ -18,6 +18,7 @@ import {
   DragReorderMiniPreview,
   GestureSwipeMiniPreview
 } from '../components/MiniPreviews'
+import { siteConfig } from '../config/site'
 
 type CategoryFilter = 'All' | 'Transitions' | 'Layout' | 'Scroll' | 'Gestures'
 
@@ -98,7 +99,7 @@ export default function HomePage() {
             </Link>
 
             <a
-              href="https://github.com/Josheqani/motion-lab"
+              href={siteConfig.repo}
               target="_blank"
               rel="noreferrer noopener"
               className="inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900 hover:bg-neutral-50 dark:hover:bg-neutral-800 text-neutral-800 dark:text-neutral-200 text-sm font-semibold transition-all shadow-xs"
@@ -269,10 +270,10 @@ export default function HomePage() {
       {/* Footer */}
       <footer className="border-t border-neutral-200 dark:border-neutral-800/80 bg-white dark:bg-neutral-950 py-10">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-500 dark:text-neutral-400">
-          <p>© 2026 motion-lab. Released under MIT License.</p>
+          <p>© 2026 {siteConfig.name}. Released under MIT License.</p>
           <div className="flex items-center gap-4">
             <a
-              href="https://github.com/Josheqani/motion-lab"
+              href={siteConfig.repo}
               target="_blank"
               rel="noreferrer noopener"
               className="hover:text-neutral-900 dark:hover:text-white transition-colors"

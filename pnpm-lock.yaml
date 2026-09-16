@@ -166,6 +166,9 @@ importers:
 
   .:
     dependencies:
+      hub-pop:
+        specifier: ^1.0.1
+        version: 1.0.1
       lucide-react:
         specifier: ^1.16.0
         version: 1.46.0(react@19.3.0)
@@ -871,6 +874,9 @@ packages:
 
   highlightjs-vue@1.0.0:
     resolution: {integrity: sha512-PDEfEF102G23vHmPhLyPboFCD+BkMGu+GuJe2d9/eH4FsCwvgBpnc9n0pGE+ffKdph38s6foEZiEjdgHdzp+IA==}
+
+  hub-pop@1.0.1:
+    resolution: {integrity: sha512-95152AgQ3KRO4P0VWeCW9v026SsrZw+V/GahSQOvmVE1ulswijIj6lGYluStx2H07FTU3D5Aav8AS0r94fK8fA==}
 
   is-alphabetical@1.0.4:
     resolution: {integrity: sha512-DwzsA04LQ10FHTZuL0/grVDk4rFoVH1pjAToYwBrHSxcrBIGQuXrQMtD5U1b0U2XVgKZCTLLP8u2Qxqhy3l2Vg==}
@@ -1705,6 +1711,8 @@ snapshots:
   highlight.js@10.7.3: {}
 
   highlightjs-vue@1.0.0: {}
+
+  hub-pop@1.0.1: {}
 
   is-alphabetical@1.0.4: {}
 

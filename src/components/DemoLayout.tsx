@@ -4,6 +4,7 @@ import { ArrowLeft, ExternalLink, Sparkles, BookOpen, RotateCcw, ChevronRight } 
 import { CodePanel } from './CodePanel'
 import { DemoInfo } from '../types'
 import { useTheme } from '../context/ThemeContext'
+import { siteConfig } from '../config/site'
 
 interface DemoLayoutProps {
   demo: DemoInfo
@@ -19,7 +20,7 @@ export function DemoLayout({
   nextDemo
 }: DemoLayoutProps) {
   const { reducedMotion } = useTheme()
-  const githubSourceUrl = `https://github.com/Josheqani/motion-lab/blob/main/${demo.sourceFile}`
+  const githubSourceUrl = `${siteConfig.repo}/blob/main/${demo.sourceFile}`
 
   return (
     <div className="min-h-screen pb-20">

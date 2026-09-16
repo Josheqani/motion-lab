@@ -12,6 +12,7 @@ import {
   Sliders
 } from 'lucide-react'
 import { useTheme } from '../context/ThemeContext'
+import { siteConfig } from '../config/site'
 
 export const DEMO_LINKS = [
   { name: 'Page Transitions', path: '/demos/page-transitions', tag: 'AnimatePresence' },
@@ -129,7 +130,7 @@ export function Nav() {
 
           {/* GitHub Repo */}
           <a
-            href="https://github.com/Josheqani/motion-lab"
+            href={siteConfig.repo}
             target="_blank"
             rel="noreferrer noopener"
             aria-label="GitHub Repository"
